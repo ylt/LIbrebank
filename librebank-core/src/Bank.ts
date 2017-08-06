@@ -1,10 +1,16 @@
-import Account from './Account';
+import User from './User';
 
-interface Bank {
+export interface oauthconf {
+    mode: string,
+    client_id: string,
+    client_secret: string
+}
 
-    getAccount(): Account;
+export interface Bank {
 
-    getATMs();
+    authenticate(conf: any): User;
+
+    // getATMs();
 
 }
 

@@ -1,17 +1,12 @@
-import {default as _Bank} from 'librebank-core';
+import {Bank as _Bank} from 'librebank-core';
 import * as paypal from 'paypal-rest-sdk';
-import User from './Account';
+import User from './User';
 import Account from './Account';
 
-interface paypalconf {
-    mode: string,
-    client_id: string,
-    client_secret: string
-}
 
 class Bank implements _Bank {
 
-    authenticate(conf : paypalconf) { //personal access token
+    authenticate(conf : any) { //personal access token
         return new User(this, conf)
     }
 

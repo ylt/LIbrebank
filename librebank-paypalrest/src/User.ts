@@ -2,7 +2,7 @@ import {User as _User} from 'librebank-core';
 import * as paypal from 'paypal-rest-sdk';
 import Account from './Account';
 
-class User implements _User {
+export class User implements _User {
 
     private paypal;
 
@@ -27,3 +27,5 @@ class User implements _User {
     }
 
 }
+
+export default User;
