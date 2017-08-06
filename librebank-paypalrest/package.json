@@ -1,0 +1,22 @@
+{
+  "name": "librebank-paypal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/es6-shim": "^0.31.34",
+    "@types/node": "^8.0.19",
+    "@types/paypal-rest-sdk": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.2.1",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "paypal-rest-sdk": "^1.7.1"
+  }
+}
