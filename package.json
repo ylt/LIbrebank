@@ -16,5 +16,8 @@
     "gulp-typescript": "^3.2.1",
     "merge2": "^1.1.0",
     "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "promise-chains": "^0.3.12"
   }
 }

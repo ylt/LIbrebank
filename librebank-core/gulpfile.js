@@ -1,7 +1,7 @@
 
 var gulp = require("gulp");
 var ts = require("gulp-typescript");
-var tsProject = ts.createProject("tsconfig.json");
+var tsProject = ts.createProject(__dirname+"/tsconfig.json");
 var merge = require('merge2');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');

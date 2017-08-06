@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "ES6",
     "module": "commonjs",
     "sourceMap": true,
     "declaration": true
@@ -9,6 +9,9 @@
     "node_modules"
   ],
   "lib": [
-    "es2015.promise"
+    "DOM",
+    "ES5",
+    "es2015.promise",
+    "ES2015.Proxy"
   ]
 }
