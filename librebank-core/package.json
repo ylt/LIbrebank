@@ -2,15 +2,20 @@
   "name": "librebank-core",
   "version": "1.0.0",
   "description": "",
+  "repository": "ylt/Librebank",
   "main": "dist/js/index.js",
+  "types": "dist/js/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.0",
     "gulp-typescript": "^3.2.1",
+    "merge2": "^1.1.0",
     "typescript": "^2.4.2"
   }
 }

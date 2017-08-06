@@ -4,6 +4,7 @@ var ts = require("gulp-typescript");
 var tsProject = ts.createProject("tsconfig.json");
 var merge = require('merge2');
 var sourcemaps = require('gulp-sourcemaps');
+var del = require('del');
 
 gulp.task("default", ['scripts']);
 
@@ -14,10 +15,10 @@ gulp.task("scripts", function () {
         .pipe(tsProject());
 
     return merge([
-        tsResult.dts.pipe(gulp.dest('dist/definitions')),
+        tsResult.dts.pipe(gulp.dest('dist')),
         tsResult.js
             .pipe(sourcemaps.write())
-            .pipe(gulp.dest('dist/js'))
+            .pipe(gulp.dest('dist'))
     ]);
 });
 
@@ -26,3 +27,9 @@ gulp.task('watch', ['scripts'], function() {
     gulp.watch('src/**/*.ts', ['scripts']);
 });
 
+
+gulp.task("clean", function () {
+    return del([
+        'dist/'
+    ]);
+});
